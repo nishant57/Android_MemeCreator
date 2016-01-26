@@ -17,7 +17,7 @@
 
     <fragment
         android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_height="280dp"
         android:name="com.example.nishant.fragments.bottom_picture_fragment"
         android:id="@+id/fragment2"
         android:layout_alignParentBottom="true"

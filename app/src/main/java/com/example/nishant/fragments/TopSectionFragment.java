@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+//import android.app.Fragment;
 
 /**
  * Created by Nishant on 26/01/2016.
@@ -44,12 +45,18 @@ public class TopSectionFragment extends Fragment {
         bottomTextInput = (EditText) view.findViewById(R.id.editText_BottomTextInput);
         final Button button = (Button) view.findViewById(R.id.button_meme);
 
-        buttonClicked(view);
+        button.setOnClickListener(
+                new View.OnClickListener(){
+                    public void onClick(View v){
+                        buttonClicked(v);
+                    }
+                }
+        );
 
         return view;
     }
 //test
-    public void butonClicked(View view){
+    public void buttonClicked(View view){
         activityCommander.createMeme(topTextInput.getText().toString(), bottomTextInput.getText().toString());
     }
 }
