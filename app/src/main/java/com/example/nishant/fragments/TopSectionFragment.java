@@ -48,7 +48,7 @@ public class TopSectionFragment extends Fragment {
 
         return view;
     }
-
+//test
     public void butonClicked(View view){
         activityCommander.createMeme(topTextInput.getText().toString(), bottomTextInput.getText().toString());
     }
